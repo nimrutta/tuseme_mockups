@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/moveme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<style>
+    nav {
+        padding-top: 7px;
+    }
+    .navbar {
+        background-color: #4d4d4d;
+        letter-spacing: 4px;
+    }
+    
+    .navbar-brand {
+        color: #ffffff !important;
+    }
+    .navbar-brand {
+        padding-top: 0px;
+        padding-left: 10px;
+        margin-bottom: 6px;
+    }
+    
+        .Tlogo {
+        height: 58px;
+        width: 200px;
+        margin-top: 5px;
+        border-radius: 3px;
+    } 
+    
+    .container ul li:hover {
+        color: #ffffff !important;
+        background-color:  !important;
+        border-bottom: 2px solid burlywood;
+        border-radius: 3px;
+        height: 40px;
+    }
+    
+    .Marejesho a.Marejesho {
+        color: #ffffff !important;
+        background-color:  !important;
+        border-bottom: 2px solid burlywood;
+        border-radius: 3px;
+        height: 40px;
+    } 
+    
+    .nav li {
+        margin-left: 30px;
+        margin-top: 10px;
+    }    
+    
+    .pagetitle {
+        font-size: 32px;
+        margin-top: 105px;
+    }
+    .pagetitle p {
+        margin-bottom: 1px;
+    }
+    .pagetitle hr {
+        margin-top: 1px;
+    }
+     
+    .archive {
+        margin-top: 126px;
+        margin-left: 20px;
+    }
+    
+    .archive hr {
+        background-color: #820912;
+        height: 1px;
+        margin-top: 5px;
+    }
+    
+    .linkback {
+        background: none;
+        border: none;
+    }
+    
+    .goback {
+        display: block;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-color: rgba(0,78,73,1);
+        border: none;
+        margin-bottom: 100px;
+        box-shadow: 2px 1px 3px #888888;
+        z-index: 2;
+    }
+    
+    .glyphicon {
+        color: #ffffff;
+    }
+    
+    .petitions {
+        margin-top: 100px;
+        width: 80%;
+    }
+    
+    /*.tuma-mapendekezo-title {
+        
+    }*/
+    
+    .petitions h3 {
+        margin-bottom: 0px;
+    }
+    
+    .tuma-mapendekezo-title h3 {
+        
+    }
+    
+    .tuma-mapendekezo-title h4 {
+        margin-top: 26px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    .form-container {
+        width: 90%;
+        background-color: rgba(244,183,87,0.1);
+        margin-left: 5%;
+    }
+    
+    .form {
+        width: 84%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    form {
+        width: auto;
+        margin-left: 9%;
+    }
+    
+     .textfield {
+        margin-bottom: 19px;
+        border-color: burlywood;
+        border-radius: 3px;
+        display: inline;
+    }
+    
+    .removefield {
+        display: inline;
+        background: none;
+        border: none;
+    }
+    
+    .extra {
+        display: none;
+    }
+    
+    .button {
+        font-size: 18px;
+        color: #ffffff;
+        height: 40px;
+        padding-top: 6px;
+        background-image: url(resources/images/send-button-strip-m.jpg);
+        background-repeat: repeat-x;
+        border-radius: 5px;
+    }
+    
+    .buttonzaidi {
+        font-size: 18px;
+        color: #ffffff;
+        height: 40px;
+        width: 110px;
+        padding-top: 6px;
+        background-image: url(resources/images/send-button-strip-m.jpg);
+        background-repeat: repeat-x;
+        border-radius: 5px;
+    }
+    
+    .zaidi-button {
+        width: 150px;
+        margin: auto;
+    }
+    
+    .b-c-m {
+        width: 200px;
+        float: right;
+        margin-right: 35px;
+    }
+    
+    .watoamaoni {
+        font-style: italic;
+        color: rgba(0,78,73,1);
+        margin-left: 210px;
+    }
+    
+    .watoamaonispan {
+        float: right;
+        margin-right: 210px;
+    } 
+    
+    .maoniyao {
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .maoniyaospan {
+        float: right;
+        margin-right: 100px; 
+    }
+    
+    .date h3 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        letter-spacing: 4px;
+    }
+    
+    .date h6{
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+    
+    .wadhifa {
+        color: dimgrey;
+        padding-left: 0px;
+    }
+    
+    .lengo {
+        color: dimgrey;
+        padding-left: 0px;
+    }
+    
+    .maelezo {
+        border-left: thick solid burlywood;
+        border-bottom-left-radius: 3px;
+        padding-left: 6px;
+    }
+    .row {
+        margin-bottom: 4px;
+        margin-left: 0px;
+    }
+    
+    .chaguzicontrolers {
+        margin-bottom: 0px;
+    }
+    
+    .chaguzicontrolers h6 {
+       margin-left: 150px;
+       margin-top: 30px;
+    }
+    
+    .default {
+        margin-bottom: 2px;
+        font-size: 18px;
+        color: #ffffff;
+        width: 125px;
+        height: 40px;
+        padding-top: 6px;
+        margin-left: 150px;
+        background-image: url(resources/images/send-button-strip-m.jpg);
+        background-repeat: repeat-x;
+        border-radius: 5px;
+        float: right;
+        margin-right: 100px;
+    }
+    
+    .primary {
+        margin-top: 9px;
+        background: none;
+        color: cadetblue;
+        border: none;
+    }
+    
+    .box {
+        background-image: url(resources/images/icon-strip-m.jpg);
+        background-repeat: repeat-x;
+        color: #fff;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        border-radius: 5px;
+    }
+     
+    .box p {
+        font-size: 18px;
+        color: black;
+        margin-top: 4px;
+    }
+    
+    .box h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+        margin-top: 45px;
+        padding-left: 19px;
+        text-align: left;
+        width: 70%;
+        border-left: thick solid burlywood;
+    }
+    
+    .textarea {
+        margin-bottom: 20px;   
+        border-color: burlywood;
+        border-radius: 3px;
+    }
+    
+    .idadi {
+        margin-left: 10px;
+        color: cadetblue;
+        border-radius: 2px;
+    }
+    
+    .check {
+        background-color: none;
+        background: none;
+        border: none;
+    }
+    .icone {
+        height: 80px;
+        width: 80px;
+        font-size: 50px;
+        margin-bottom: 13px;
+    }
+    
+    hr {
+        background-color: #820912;
+        height: 2px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .bgfooter{
+        background-color: #ffffff;
+        margin-top: 0px;
+    }
+    
+    .socioicion {
+        height: 45px;
+        margin-left: 105px;
+        margin-right: 120px;
+        margin-top: 40px;
+    }
+    
+    footer .row {
+        margin-bottom: 0px;
+    }
+    
+    footer p {
+        margin-top: 110px;
+        font-size: 11px;
+        color: #820912;
+    }
+    
+    footer p a {
+        color: #820912;
+    }
+    
+</style>
+</head>
+<body class="Marejesho">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="Tlogo" src="resources/images/badge.jpg"> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Tuma Ujumbe">Tuma</a></li>   
+          <li><a class="Marejesho" href="Marejesho">Marejesho</a></li>  
+          <li><a href="Maoni">Maoni</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav section -->
+ 
+    <!--main ection goes in here -->
+  <div class="row">
+        
+    <div class="archive col-sm-1">
+        <a href="#"><button class="goback">
+           <span class="glyphicon glyphicon-chevron-left"></span>
+        </button></a>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+    </div>
+      
+   
+    <div class="container petitions col-sm-11">
+    <div class = "row" style="margin-bottom: 0px">
+        <div class="col-sm-4"> <h2><span style=" font-weight: bold;">Mtendaji</span> Mlalakua</h2></div>
+          
+          <div class="col-sm-4" style="margin-top: 28px; padding-left: 75px;"><small style=" font-weight: bold;" ><a href="#" style="color: #000000;"> Tuma Mapendekezo </a></small></div>
+        
+          <div class="col-sm-4" style="margin-top: 28px; padding-left: 75px;"><small style=" font-weight: bold;"><a href="#" style="color: #888888;"> Hariri Mapendekezo</a></small></div>
+    </div>
+    <hr>
+        
+        
+    <div class="form-container">
+     <br>
+     <div class="form">
+     <form>
+       <p><strong>Orodha ya mapendekezo</strong></p>
+       <textarea class="textfield" id="1" name=" Maelezo ya mada kwa ufupi" text=" Maelezo ya mada kwa ufupi" placeholder="     1." cols="80" rows="1"></textarea>
+       <br>
+       <textarea class="textfield" id="2" name="Mlengwa" placeholder="    2." cols="80" rows="1"></textarea>
+       <br>
+       <textarea class="textfield" id="3" name="Mlengwa" placeholder="    3." cols="80" rows="1"></textarea>
+       <br>
+       <textarea class="textfield" id="4" name="Mlengwa" placeholder="    4." cols="80" rows="1"></textarea>
+       <br> 
+         
+      <div class="extra" id="5"><textarea class="textfield" name="Mlengwa" placeholder="    5." cols="80" rows="1"></textarea> <button class="removefield" onclick="remove5
+          ()">x</button> </div>
+         
+       <!--<textarea class="textfield extra" id="5" name="Mlengwa" placeholder="    5." cols="80" rows="1"></textarea> -->
+    
+       <div class="extra" id="6"><textarea class="textfield" name="Mlengwa" placeholder="    6." cols="80" rows="1"></textarea> <button class="removefield" onclick="remove6 ()">x</button> </div>
+       
+       <div class="extra" id="7"><textarea class="textfield" name="Mlengwa" placeholder="    7." cols="80" rows="1"></textarea> <button class="removefield" onclick="remove7 ()">x</button> </div>  
+       <br>
+        
+     </form>
+     </div>
+     <div class="zaidi-button">
+       <button class="buttonzaidi" type="button" onclick="maonizaidi ()">Zaidi</button>  
+     </div>   
+     <br><br>
+        
+     <div class="form">
+     <form>
+       <p><strong>Mwisho wa kupokea maoni</strong></p>
+       <textarea class="textfield" name=" Maelezo ya mada kwa ufupi" text=" Maelezo ya mada kwa ufupi" placeholder="     Tarehe" cols="80" rows="1"></textarea>
+       <br>
+       <br>  
+       <br>
+        
+     </form>
+     
+     <div class="b-c-m">
+       <button class="button" type="button" onclick="Maoni yako yametumwa">Chapa mapendekezo</button>  
+     </div>
+         
+     </div>
+
+     <br><br>
+     <br><br>
+     <br>
+    </div>    
+    
+   </div>
+  
+</div>
+  <!-- end of main section-->
+  <footer class="container-fluid bgfooter text-center">
+         <div class="row">
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-facebook-outline.png" class="socioicion"></a> </div>
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-linkedin-outline.png" class="socioicion"></a></div>
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-twitter-outline.png" class="socioicion"></a></div>
+     <p> Created by<a href="#"> Tuseme team</a>, 2017</p>
+         </div>
+  </footer>
+    
+  <script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+   
+<script>
+  var i = 5;
+  function maonizaidi (){
+      var z = i.toString();
+      document.getElementById(z).style.display = "block";
+      i++;
+  }    
+</script>
+    
+<script>
+    
+  function remove5(){
+      document.getElementById("5").style.display = "none";
+      i--;
+  }
+    
+  function remove6(){
+      document.getElementById("6").style.display = "none";
+      i--;
+  }
+    
+  function remove7(){
+      document.getElementById("7").style.display = "none";
+      i--;
+  }
+</script>
+    
+</body>
+</html>
