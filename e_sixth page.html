@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/moveme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<style>
+    nav {
+        padding-top: 7px;
+    }
+    .navbar {
+        background-color: #4d4d4d;
+        letter-spacing: 4px;
+    }
+    
+    .navbar-brand {
+        color: #ffffff !important;
+    }
+    .navbar-brand {
+        padding-top: 0px;
+        padding-left: 10px;
+        margin-bottom: 6px;
+    }
+     
+    .showdrawer {
+        background: none;
+        border: none;
+    }
+    
+        .Tlogo {
+        height: 58px;
+        width: 200px;
+        margin-top: 5px;
+        border-radius: 3px;
+    } 
+    
+    .container ul li:hover {
+        color: #ffffff !important;
+        background-color:  !important;
+        border-bottom: 2px solid burlywood;
+        border-radius: 3px;
+        height: 40px;
+    }
+    
+    .Pendekeza a.Pendekeza {
+        color: #ffffff !important;
+        background-color:  !important;
+        border-bottom: 2px solid burlywood;
+        border-radius: 3px;
+        height: 40px;
+    } 
+    
+    .nav li {
+        margin-left: 30px;
+        margin-top: 10px;
+    }    
+     
+    .bnotfooter {
+        height: 850px;
+        width: 100%;
+    }
+    
+    footer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .containermajor {
+        margin-top: 90px;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+    }
+    
+    .major {
+        margin-top: 92px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 96%;
+        height: 91%;
+        z-index: 1;
+        position: relative;
+        float:left;
+    }
+    
+    .drawer {
+        height:100%;
+        width: 100%;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: ;
+       
+    }
+    
+    .drawerbed {
+        width: 20%;
+        height: 100%;
+        background-color: rgba(0,78,73,0.9);
+        color: white;
+    }
+    
+    .drawerbed h3 {
+        margin-top: 27px;
+    }
+    
+    .drawerbed hr {
+        background-color: burlywood;
+        height: 1px;
+        border: none;
+    }
+    
+    .drawerlocationid {
+        color: burlywood;
+    }
+    
+    .drawerextension {
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+    
+    .pagetitle {
+        font-size: 32px;
+        margin-top: 105px;
+    }
+    
+    .pagetitle p {
+        margin-bottom: 1px;
+    }
+    
+    .pagetitle hr {
+        margin-top: 1px;
+    }
+    
+    .petitions {
+        margin-top: 10px;
+        width: 80%;
+    }
+    
+    .petitions h3 {
+        margin-bottom: 0px;
+    }
+    
+    .date h3 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        letter-spacing: 4px;
+    }
+    
+    .date h6{
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+    
+    .wadhifa {
+        color: dimgrey;
+        padding-left: 0px;
+    }
+    
+    .lengo {
+        color: dimgrey;
+        padding-left: 0px;
+    }
+    
+    .maelezo {
+        border-left: thick solid burlywood;
+        border-bottom-left-radius: 3px;
+        padding-left: 6px;
+    }
+    
+    .row {
+        margin-bottom: 4px;
+        margin-left: 0px;
+    }
+    
+    .chaguzicontrolers {
+        margin-bottom: 0px;
+    }
+    
+    .chaguzicontrolers h6 {
+       margin-left: 150px;
+       margin-top: 30px;
+    }
+    
+    .default {
+        margin-bottom: 2px;
+        font-size: 18px;
+        color: #ffffff;
+        width: 125px;
+        height: 40px;
+        padding-top: 6px;
+        margin-left: 150px;
+        background-image: url(resources/images/send-button-strip-m.jpg);
+        background-repeat: repeat-x;
+        border-radius: 5px;
+    }
+    
+    .primary {
+        margin-top: 9px;
+        background: none;
+        color: cadetblue;
+        border: none;
+    }
+    
+    .box {
+        background-image: url(resources/images/icon-strip-m.jpg);
+        background-repeat: repeat-x;
+        color: #fff;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        border-radius: 5px;
+    }
+     
+    .box p {
+        font-size: 18px;
+        color: black;
+        margin-top: 4px;
+    }
+    
+    .box h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+        margin-top: 45px;
+        padding-left: 19px;
+        text-align: left;
+        width: 70%;
+        border-left: thick solid burlywood;
+    }
+    
+    form {
+        margin-left: 135px;
+    }
+    
+    .textfield {
+        margin-bottom: 19px;
+        border-color: burlywood;
+        border-radius: 3px;
+    }
+    
+    .textarea {
+        margin-bottom: 20px;   
+        border-color: burlywood;
+        border-radius: 3px;
+    }
+    
+    .idadi {
+        margin-left: 10px;
+        color: cadetblue;
+        border-radius: 2px;
+    }
+    
+    .button {
+        font-size: 18px;
+        color: #ffffff;
+        width: 110px;
+        height: 40px;
+        padding-top: 6px;
+        margin-left: 300px;
+        background-image: url(resources/images/send-button-strip-m.jpg);
+        background-repeat: repeat-x;
+        border-radius: 5px;
+    }
+    
+    .check {
+        background-color: none;
+        background: none;
+        border: none;
+    }
+    
+    .icone {
+        height: 80px;
+        width: 80px;
+        font-size: 50px;
+        margin-bottom: 13px;
+    }
+    
+    hr {
+        background-color: #820912;
+        height: 2px;
+        margin-top: 5px;
+    }
+    
+    .bgfooter{
+        background-color: #ffffff;
+        margin-top: 0px;
+    }
+    
+    .socioicion {
+        height: 45px;
+        margin-left: 105px;
+        margin-right: 120px;
+        margin-top: 40px;
+    }
+    
+    footer .row {
+        margin-bottom: 0px;
+    }
+    
+    footer p {
+        margin-top: 110px;
+        font-size: 11px;
+        color: #820912;
+    }
+    
+    footer p a {
+        color: #820912;
+    }
+    
+</style>
+</head>
+<body class="Pendekeza">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button class="showdrawer" onclick="displayblock()"><a class="navbar-brand" href="#"><img class="Tlogo" src="resources/images/badge.jpg"> </a></button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Taarifa">Taarifa</a></li>   
+          <li><a href="Maoni">Maoni</a></li>  
+          <li><a href="Ripoti">Ripoti</a></li>
+          <li><a class="Pendekeza" href="Pendekeza">Pendekeza</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav section -->
+ 
+     <div class="bnotfooter">
+        <div class="major">
+       
+     <div class="row drawer" id="drawer">
+      <div class="col-sm-3 drawerbed">
+        <h3>Shaban M<span class="drawerlocationid"> Mlalakua</span></h3>
+        <br>
+        <p>Taarifa za akaunti yangu</p>
+        <hr>
+        <br>
+        <p>Badili lugha</p>
+        <hr>
+        <br>
+        <p>Kuhusu Mlalakua</p>
+        <hr>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+      </div>
+      
+      <div class="col-sm-9 drawerextension">
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br> 
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+      </div>
+         
+     </div>
+        
+    </div>
+    
+   <!--main ection goes in here -->
+   <div class="containermajor">
+     <div class="container petitions">
+    <h3>Maswala ya kupewa kipaumbele kwenye bajeti ya mtaa wa Mlalakua 2017/2018 </h3>
+    <hr>
+    <div class="seethroughbox"></div>
+    <div class="row chaguzi">
+      <p id="1"></p><br>
+      <p id="2"></p><br>
+      <p id="3"></p><br>
+      <p id="4"></p><br>
+      <p id="5"></p><br>
+      <p id="6"></p><br>
+      <br><br>
+      
+        <div class="row chaguzicontrolers">
+           <div class="col-sm-4">
+              <h6>* Fanya walau chaguo moja  </h6>
+           </div>
+           <div class="col-sm-4">
+              <button class="default" type="button"> Wasirisha </button>
+           </div>
+           <div class="col-sm-4">
+              <button class="primary" type="button" onclick="reset ()">Rudia kuchagua</button>
+           </div>
+        </div>
+    
+    </div>
+    <hr>
+     <fieldset>
+       <div class="item" id="1a">
+         <button class="check" onclick="select ()"><input type="checkbox" id="1i"></button>
+         <label for="1i" id="11">  Ununuzi wa vitendea kazi kwenye zahanati kuu ya mtaa.</label>
+       </div>  
+       <div class="item" id="2b">
+         <button class="check" onclick="select1 ()"><input type="checkbox" id="2i"></button>
+         <label for="2i" id="22">  Kuongeza vyoo kwenye shule ya msingi Amani.</label>
+       </div>  
+       <div class="item" id="3c">
+         <button class="check" onclick="select2 ()"><input type="checkbox" id="3i"></button>
+         <label for="3i" id="33">  Mradi wa soko la kisasa mtaani Mlalakua.</label>
+       </div>  
+       <div class="item" id="4d">
+         <button class="check" onclick="select3 ()"><input type="checkbox" id="4i"></button>
+         <label for="4i" id="44">  Ukarabati wa mfumo wa maji taka.</label>
+       </div>  
+       <div class="item" id="5e">
+         <button class="check" onclick="select4 ()"><input type="checkbox" id="5i"></button>
+         <label for="5i" id="55">  Orporis suscipit laboriosam, nisi ut aliquid ex ea.</label>
+       </div> 
+       <div class="item" id="6f">
+         <button class="check" onclick="select5 ()"><input type="checkbox" id="6i"></button>
+         <label for="6i" id="66">  Orporis suscipit laboriosam, nisi ut aliquid ex ea.</label>
+       </div> 
+     </fieldset> 
+    <br><br>
+    <br>
+  </div>
+  </div>
+ </div>
+       
+  <!-- end of main section-->
+  <footer class="container-fluid bgfooter text-center">
+         <div class="row">
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-facebook-outline.png" class="socioicion"></a> </div>
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-linkedin-outline.png" class="socioicion"></a></div>
+             <div class="col-sm-4"><a href="#"><img src="resources/images/social-twitter-outline.png" class="socioicion"></a></div>
+     <p> Created by<a href="#"> Tuseme team</a>, 2017</p>
+         </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+    
+<script>
+  var numbering = 0;
+      numbering++;
+  function select () {
+    var element = document.getElementById("11").innerHTML;
+    document.getElementById("1a").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++; 
+  }
+    
+ function select1 () {
+    var element = document.getElementById("22").innerHTML;
+    document.getElementById("2b").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++;   
+  }
+    
+function select2 () {
+    var element = document.getElementById("33").innerHTML;
+    document.getElementById("3c").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++; 
+  }
+    
+function select3 () {
+    var element = document.getElementById("44").innerHTML;
+    document.getElementById("4d").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++;  
+  }
+    
+function select4 () {
+    var element = document.getElementById("55").innerHTML;
+    document.getElementById("5e").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++; 
+  }
+    
+function select5 () {
+    var element = document.getElementById("66").innerHTML;
+    document.getElementById("6f").style.display = "none";
+    document.getElementById(numbering).innerHTML =numbering + ".  " + element;  
+    numbering++;  
+  }
+    
+function reset () { 
+    
+    document.getElementById("1").innerHTML = "";
+    document.getElementById("2").innerHTML = "";
+    document.getElementById("3").innerHTML = "";
+    document.getElementById("4").innerHTML = "";
+    document.getElementById("5").innerHTML = "";
+    document.getElementById("6").innerHTML = "";
+    
+    document.getElementById("1a").style.display = "block";
+    document.getElementById("2b").style.display = "block";
+    document.getElementById("3c").style.display = "block";
+    document.getElementById("4d").style.display = "block";
+    document.getElementById("5e").style.display = "block";
+    document.getElementById("6f").style.display = "block";
+    
+    numbering = 1;
+}
+    
+</script>
+    
+    <script>
+  var click = 2;
+    
+  function displayblock() {
+    var decide = click % 2;
+      
+      if (decide === 0) {
+          document.getElementById("drawer").style.display = "block";
+          
+      }
+      
+      else {
+          document.getElementById("drawer").style.display = "none";
+      }
+      
+      click++; 
+  }
+    
+</script>
+    
+</body>
+</html>
