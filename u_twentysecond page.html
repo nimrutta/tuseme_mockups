@@ -46,7 +46,7 @@
         height: 40px;
     }
     
-    .Marejesho a.Marejesho {
+    .Tuma a.Tuma {
         color: #ffffff !important;
         background-color:  !important;
         border-bottom: 2px solid burlywood;
@@ -363,7 +363,7 @@
     
 </style>
 </head>
-<body class="Marejesho">
+<body class="Tuma">
      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -377,16 +377,19 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="Tuma Ujumbe">Tuma</a></li>   
-          <li><a class="Marejesho" href="Marejesho">Marejesho</a></li>  
+          <li><a href="tuma" class="Tuma">Tuma</a></li> 
+          <li><a  href="Marejesho">Marejesho</a></li>  
           <li><a href="Maoni">Maoni</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- end of nav section -->
+
+
+   
  
-    <!--main ection goes in here -->
+    <!--main section goes in here -->
   <div class="row">
         
     <div class="archive col-sm-1">
@@ -402,29 +405,22 @@
       
    
     <div class="container petitions col-sm-11">
-    <div class = "row" style="margin-bottom: 0px">
-        <div class="col-sm-4"> <h2><span style=" font-weight: bold;">Mtendaji</span> Mlalakua</h2></div>
-          
-          <div class="col-sm-4" style="margin-top: 28px; padding-left: 75px;"><small style=" font-weight: bold;" ><a href="#" style="color: #000000; font-size: 18px"> Tuma Mapendekezo </a></small></div>
-        
-          <div class="col-sm-4" style="margin-top: 28px; padding-left: 75px;"><small style=" font-weight: bold; font-size: 18px"><a href="#" style="color: #888888;"> Hariri Mapendekezo</a></small></div>
+    <div class="tuma-mapendekezo-title row">
+    <div class="col-sm-4"><h3><strong>Mtendaji</strong> Mlalakua</h3></div>
+    <div class="col-sm-8"><h4>Tuma ujumbe</h4></div>
     </div>
     <hr>
-        
-        
     <div class="form-container">
      <br>
      <div class="form">
      <form>
-       <p><strong>Orodha ya mapendekezo</strong></p>
-       <textarea class="textfield" id="1" name=" Maelezo ya mada kwa ufupi" text=" Maelezo ya mada kwa ufupi" placeholder="     1." cols="80" rows="1"></textarea>
-       <br>
-       <textarea class="textfield" id="2" name="Mlengwa" placeholder="    2." cols="80" rows="1"></textarea>
-       <br>
-       <textarea class="textfield" id="3" name="Mlengwa" placeholder="    3." cols="80" rows="1"></textarea>
-       <br>
-       <textarea class="textfield" id="4" name="Mlengwa" placeholder="    4." cols="80" rows="1"></textarea>
-       <br> 
+       <input  type="checkbox" name="vehicle1" value="Bike"> Ujumbe kwa wananchi wote<br><br>
+    <input  type="checkbox" name="vehicle1" value="Bike"> Ujumbe kwa (ma)kundi lengwa <br><br>
+
+     <textarea  placeholder="Maelezo kwa urefu" rows="10" cols="80" ></textarea>
+
+
+      
          
       <div class="extra" id="5"><textarea class="textfield" name="Mlengwa" placeholder="    5." cols="80" rows="1"></textarea> <button class="removefield" onclick="remove5
           ()">x</button> </div>
@@ -438,23 +434,14 @@
         
      </form>
      </div>
-     <div class="zaidi-button">
-       <button class="buttonzaidi" type="button" onclick="maonizaidi ()">Zaidi</button>  
-     </div>   
+       
      <br><br>
         
      <div class="form">
-     <form>
-       <p><strong>Mwisho wa kupokea maoni</strong></p>
-       <textarea class="textfield" name=" Maelezo ya mada kwa ufupi" text=" Maelezo ya mada kwa ufupi" placeholder="     Tarehe" cols="80" rows="1"></textarea>
-       <br>
-       <br>  
-       <br>
-        
-     </form>
+     
      
      <div class="b-c-m">
-       <button class="button" type="button" onclick="Maoni yako yametumwa">Chapa mapendekezo</button>  
+       <button class="button" type="button" onclick="Maoni yako yametumwa">Tuma ujumbe</button>  
      </div>
          
      </div>
